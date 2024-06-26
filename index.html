@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-white" href="#">Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white me-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-3" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-3" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-3" href="#">photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-5" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    
+<div class="banner vh-100">
+    <div class="container pt-5">
+      <div class="position-relative ">
+        <input type="text" placeholder="Find your location" id="searchLocation" class="form-control rounded-pill px-4 py-1">
+      <button class="btn btn-info px-4 py-1 position-absolute end-0 top-0 rounded-pill">Find</button>
+      <div class="forecast-table pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-bg-dark mb-3">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <span id="TodayWeekDayMarkup"></span>
+                  <span id="TodayDate"></span>
+                </div>
+                <div class="card-body">
+                <div>
+                  <span id="cityName"></span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <span id="tempToday" class="fw-bold display-1"></span>
+                  <img class="icon" src="" id="imgToday"/>
+                </div>
+                <div>
+                  <span class="mt-2 text-info" id="todayCond"></span>
+                </div>
+                <div class="icons d-flex justify-content-between align-items-center mt-2">
+     <div>
+      <img src="images/icon-umberella.png"/>
+      <span id="humidityToday"></span>
+     </div>
+     <div>
+      <img src="images/icon-wind.png"/>
+      <span id="windToday"></span>
+     </div>
+     <div>
+      <img src="images/icon-compass.png"/>
+      <span id="dirToday"></span>
+     </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-bg-dark mb-3 ">
+                <div class="card-header text-center">
+                  <span id="TommorrowDay"></span>
+                </div>
+                <div class="card-body">
+                <img src="" id="iconTommorow" class="my-2"/>
+                <span class="fs-4 fw-bold mb-2 d-block text-center" id="TommorrowMaxTemp"></span>
+                <span class="mb-2 d-block text-center" id="TommorowMinTemp"></span>
+                <span id="TommorowCond" class="text-info text-center d-block"></span>
+     
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-bg-dark mb-3">
+                <div class="card-header text-center">
+                  <span id="AfterTommorrowDay"></span>
+                </div>
+                <div class="card-body">
+                <img src="" id="iconAfterTommorow"/>
+                <span class="fs-4 fw-bold mb-2 d-block" id="AfterTommorrowMaxTemp"></span>
+                <span class="mb-2 d-block" id="AfterTommorowMinTemp"></span>
+                <span id="AfterTommorowCond"></span>
+     
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+</div>
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
